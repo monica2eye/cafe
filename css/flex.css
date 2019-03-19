@@ -1,0 +1,25 @@
+/*
+flex-direction: row | row-reverse | column | column-reverse
+flex-wrap: nowrap | wrap | wrap-reverse
+flex-flow: flex-direction flex-wrap => 두개를 같이쓰는 속성
+justify-content: flex-start | flex-end | center | space-around | space-between | space-evenly
+align-items: flex-start | flex-end | center | stretch | baseline;
+*/
+
+
+.navs {width:100%; background-color:black; color:white;}
+	.navs {display: flex; justify-content: space-around; align-items: center; cursor: pointer;}
+	.navs > li {padding: 1.5rem 0; text-align:center; }
+	.navs > li:hover {background-color: #bbbbbb; color:black; padding:0.5rem 0;}
+.navs > :nth-child(1) {order: 1; flex: 1 1 25%;}
+.navs > :nth-child(2) {order: 2; flex: 1 1 25%;}
+.navs > :nth-child(3) {order: 3; flex: 1 1 25%;}
+.navs > :nth-child(4) {order: 4; flex: 1 1 25%;}
+
+
+.mains {width:100%; height:80%; background: url(../img/coffeehouse.jpg) no-repeat center; background-size: cover;}
+.h1 {display: flex; color:white; justify-content: center; }
+.mains {display: flex; justify-content: space-between; color:white;}
+.mains > li {align-self: flex-end; margin: 0 10px 10px 10px; background-color: black; padding: 0.5rem 0; margin: 0 10px 10px 10px;}
+.mains > li > :nth-child(1) {order: 1; flex: 1 1 25%;}
+.mains > li > :nth-child(2) {order: 2; flex: 1 1 25%;}
